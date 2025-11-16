@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botiga Online</title>
+</head>
+<body>
+    <h1>Botiga Online</h1>
+    
+    <h2>Telèfon Mòbil</h2>
+    <p>Preu: 599.99€</p>
+    <form action="cistella_compra.php" method="POST">
+        <input type="hidden" name="nom_producte" value="Telèfon Mòbil">
+        <input type="hidden" name="preu_producte" value="599.99">
+        <input type="hidden" name="accio" value="afegir">
+        <label>Quantitat: <input type="number" name="quantitat" min="1" value="1" required></label>
+        <button type="submit">Afegir a la cistella</button>
+    </form>
+    
+    <hr>
+    
+    <h2>Portàtil</h2>
+    <p>Preu: 899.99€</p>
+    <form action="cistella_compra.php" method="POST">
+        <input type="hidden" name="nom_producte" value="Portàtil">
+        <input type="hidden" name="preu_producte" value="899.99">
+        <input type="hidden" name="accio" value="afegir">
+        <label>Quantitat: <input type="number" name="quantitat" min="1" value="1" required></label>
+        <button type="submit">Afegir a la cistella</button>
+    </form>
+    
+    <hr>
+    
+    <p><a href="resum.php">Finalitzar Compra</a></p>
+</body>
+</html>
